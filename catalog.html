@@ -5,28 +5,36 @@
     <title>«Техномарт»</title>
   </head>
   <body>
+
+
   	<header class="main-header">
   		<div class="top-header">
-  			<div class="logo"><a href="index.html">Техномарт</a>
-  			</div>
-  				<label for="search"><img src="img/icon-search.svg" alt="Поиск"></label>
+  			<img src="" alt="logo">
+
+        <form action="https://echo.htmlacademy.ru" method="get">
+  				<label class="visual-hidden" for="search">Поиск</label>
   				<input type="search" id="search" name="search" placeholder="Поиск">
+          <label class="visual-hidden" for="submit">Отправить форму</label>
+          <input type="submit" name="Отправить" id="submit">
+          </form>
+
   			<ul class="market-purchase">
-  				<li><img src="img/icon-bookmark.svg" alt="Закладки"><a href="#">Закладки</a></li>
-  				<li><img src="img/cart-icon.svg" alt="Корзина"><a href="#">Корзина</a></li>
+  				<li><a href="#">Закладки</a></li>
+  				<li><a href="#">Корзина</a></li>
   				<li><a href="#">Оформить заказ</a></li>
   			</ul>
   		</div>
   		<div class="middle-header">
   			<p class="market-name">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-  			<div class="phone-number">
-  				<img src="img/icon-phone.svg" alt="Номер телефона">
+  			<span class="phone-number">
   				+7 (812) 555-05-55
-  			</div>
+  			</span>
   			<span class="addres-top"> г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</span>
-  			<button><img src="img/icon-login.svg" alt="Войти">Равшан Джамшутович</button>
-  			<a href="#">Мои заказы</a>
-        <a href="#">Личный кабинет</a>
+  			<ul class="personal-account">
+          <li><a href="#">Равшан Джамшутович</a></li>
+  			  <li><a href="#">Мои заказы</a></li>
+          <li><a href="#">Личный кабинет</a></li>
+        </ul>
   		</div>
   		<nav class="main-navigation">
   			<ul class="site-navigation">
@@ -40,15 +48,35 @@
   			</ul>
   		</nav>
   	</header>
+
+
     <main class="container">
+
       <ul class="breadcrumbs">
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="#">Инструменты</a></li>
         <li class="breadcrumbs-current">Перфораторы</li>
       </ul>
-      <h1 class="tooling"></h1>
+
+      <h1 class="tooling">Перфораторы</h1>
+      <section class="filter">
+        <form action="https://echo.htmlacademy.ru" method="get">
+
+          <div class="field-range">
+          <b>Фильтр:</b> <br> 
+          <label for="range">Цена:</label>
+          <input type="range" id="range" min="0" max="30000" step="1">
+          <label class="visual-hidden" for="min-value">Минимальное значение</label>
+          <input type="number" id="min-value" min="0" max="30000" step="1">
+          -
+          <label class="visual-hidden" for="max-value">Максимальное значение</label>
+          <input type="number" id="max-value" min="0" max="30000" step="1">
+          </div>
+
+          <div class="field-chexbox">
       <b>Производители:</b>
-      <ul>
+      
+      <ul class="manufacturers">
         <li>bosch</li>
         <li>интерскол</li>
         <li>makita</li>
@@ -56,11 +84,16 @@
         <li>hitachi</li>
       </ul>
       <b>питание:</b>
-      <ul>
+      <ul class="feed">
         <li>аккумуляторные</li>
         <li>сетевые</li>
       </ul>
       <button>Показать</button>
+      </div>
+
+      </form>
+      </section>
+      <section class="item-list">
       <ul class="items">
         <li><img src="" alt="перфоратор"><b><a href="#">Перфоратор BOSHC BFG 3000</a></b> <b>22500 Р.</b> <b>15500 Р.</b></li>
         <li><img src="" alt="перфоратор"><b><a href="#">Перфоратор BOSHC BFG 6000</a></b> <b>30500 Р.</b> <b>25500 Р.</b></li>
@@ -72,13 +105,15 @@
         <li><img src="" alt="перфоратор"><b><a href="#">Перфоратор BOSHC BFG 6000</a></b> <b>30500</b> <b>25500 Р.</b></li>
         <li><img src="" alt="перфоратор"><b><a href="#">Перфоратор BOSHC BFG 2000</a></b> <b>12500 Р.</b></li>
       </ul>
+      </section>
     </main>
 
 
     <footer class="main-footer">
   <div class="top-footer">
-  <div class="logo"><a href="index.html">Техномарт</a>
+  <div class="logo"><a href="index.html"><img src="#" alt="logo"></a>
     </div>
+
     <ul class="second-navigation">
       <li><a href="#">Компания</a></li>
       <li><a href="#">Новости</a></li>
@@ -86,20 +121,26 @@
       <li><a href="#">Доставка</a></li>
       <li><a href="#">Контакты</a></li>
     </ul>
+
     <span class="addres-bottom"> г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8
     +7 (812) 555-05-55
     </span>
+
     <ul class="third-navigation">
       <li><a href="#">Материалы</a></li>
       <li><a href="#">Техника</a></li>
       <li><a href="#">Инструмент</a></li>
       <li><a href="#">Спецпредложения</a></li>
     </ul>
+
     </div>
+
     <div class="bottom-footer">
+
       <span class="footer-copyright">
         copyright 2010-2017 Компания «Техномарт» Все права защищены
       </span>
+      
       <ul>
           <li><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="Вконтакте"></a></li>
           <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук"></a></li>
