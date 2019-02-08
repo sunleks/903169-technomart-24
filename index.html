@@ -12,12 +12,14 @@
       <a href="index.html"><img src="img/logo-technomart.svg" alt="logo"></a>
 
         <!--      Форма            -->
-
-
-      <span>Здесь будет форма</span>
-
-
-
+        <form action="https://htmlacademy.ru">
+    <fieldset>
+      <legend class="visually-hidden">Поиск по сайту</legend>
+      <label class="visually-hidden" for="search">Поиск</label>
+      <input type="search" placeholder="Поиск" id="search">
+      <input type="submit" value="Отправить" class="button btn-submit">
+    </fieldset>
+    </form>
         <!--       Форма           -->
 
       <ul class="market-purchase">
@@ -105,15 +107,39 @@
         copyright 2010-2017 Компания «Техномарт» Все права защищены
       </span>
       <ul>
-        <li><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="Вконтакте"></a></li>
-        <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук"></a></li>
-        <li><a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Инстаграм"></a></li>
+        <li><a class="social-button" href="#"><img src="img/icon-vk.svg" alt="Вконтакте"></a></li>
+        <li><a class="social-button" href="#"><img src="img/icon-fb.svg" alt="Фейсбук"></a></li>
+        <li><a class="social-button" href="#"><img src="img/icon-insta.svg" alt="Инстаграм"></a></li>
       </ul>
       <b>Обратная связь:</b>
       <a class="button" href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       <b>Разработано - </b>
       <a class="button" href="https://htmlacademy.ru">htmlacademy</a>
     </div>
+
+  <section class="field-login-pasword">
+    <h2>Личный кабинет</h2>
+    <p>Введите свой логин и пароль</p>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <label class="label-name">Ваше имя:<input type="text" name="name" placeholder="Имя Фамилия"></label>
+      <label class="label-email">Ваш e-mail:<input type="email" name="email" placeholder="email@example.com"></label>
+      <label class="label-textarea">Текст письма:
+      <textarea name="letter-text" rows="6" cols="60" placeholder="В свободной форме"></textarea>
+      </label>
+      <input type="submit" class="button" value="Отправить">
+    </form>
+    <button type="button" class="modal-close">Закрыть
+    </button>
+  </section>
+
+  <section class="modal-map">
+    <h2 class="visually-hidden">Как до нас добраться
+    </h2>
+    <p>
+      <img src="#" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    </p>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
 
   </footer>
  </body>

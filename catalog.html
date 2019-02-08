@@ -12,12 +12,14 @@
   			<a href="index.html"><img src="img/logo-technomart.svg" alt="logo"></a>
 
        <!--      Форма            -->
-
-
-        <span>Здесь будет форма</span>
-
-
-
+       <form action="https://htmlacademy.ru">
+    <fieldset>
+      <legend class="visually-hidden">Поиск по сайту</legend>
+      <label class="visually-hidden" for="search">Поиск</label>
+      <input type="search" placeholder="Поиск" id="search">
+      <input type="submit" value="Отправить" class="button btn-submit">
+    </fieldset>
+    </form>
         <!--       Форма           -->
 
   			<ul class="market-purchase">
@@ -63,27 +65,27 @@
       <h2 class="tooling">Перфораторы</h2>
 
       <!-- Здесь будет форма -->
-
-    <section class="filter">
-      <div class="field-range">
-            <span>Форма</span>
-      </div>
-      <div class="field-chexbox">
-        <b>Производители:</b>
+      <fieldset>
+        <legend>Производители</legend>
         <ul class="manufacturers">
-          <li>bosch</li>
-          <li>интерскол</li>
-          <li>makita</li>
-          <li>dewalt</li>
-          <li>hitachi</li>
+          <li><input class="visually-hidden" type="checkbox" name="bosch" id="filter-bosch" checked><label for="filter-bosch">bosch</label></li>
+          <li><input class="visually-hidden" type="checkbox" name="интерскол" id="filter-intrescol"><label for="filter-intrescol">интерскол</label></li>
+          <li><input class="visually-hidden" type="checkbox" name="makita" id="filter-makita" checked><label for="filter-makita">makita</label></li>
+          <li><input class="visually-hidden" type="checkbox" name="dewalt" id="filter-dewalt"><label for="filter-dewalt">dewalt</label></li>
+          <li><input class="visually-hidden" type="checkbox" name="hitachi" id="filter-hitachi"><label for="filter-hitachi">hitachi</label></li>
         </ul>
-        <b>питание:</b>
+      </fieldset>
+
+      <fieldset>
+        <legend>Питание</legend>
         <ul class="feed">
-          <li>аккумуляторные</li>
-          <li>сетевые</li>
+          <li><input type="radio" name="feed" id="filter-rechargeable" checked><label for="filter-rechargeable">аккумуляторные</label></li>
+          <li><input type="radio" name="feed" id="filter-networking"><label for="filter-networking">сетевые</label></li>
         </ul>
-        <span>Показать</span>
-      </div>
+      </fieldset>
+
+      <button class="button button-show">Показать
+      </button> 
     </section>
 
       <!-- Здесь будет форма -->
@@ -102,6 +104,15 @@
         </ul>
       </section>
   </main>
+      <section class="modal-access">
+        <p><img src="" alt="">Товар добавлен в корзину</p>
+        <form action="https://htmlacademy.ru" method="get">
+          <input type="submit" class="button button-send" value="Оформить заказ">
+          <input type="button" class="button button-return" value="Продолжить покупки">
+        </form>
+        <button type="button" class="modal-close">Закрыть
+    </button>
+      </section>
 
 
   <footer class="main-footer">
@@ -133,9 +144,9 @@
         copyright 2010-2017 Компания «Техномарт» Все права защищены
       </span>
       <ul>
-        <li><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="Вконтакте"></a></li>
-        <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук"></a></li>
-        <li><a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Инстаграм"></a></li>
+        <li><a class="social-button" href="#"><img src="img/icon-vk.svg" alt="Вконтакте"></a></li>
+        <li><a class="social-button" href="#"><img src="img/icon-fb.svg" alt="Фейсбук"></a></li>
+        <li><a class="social-button" href="#"><img src="img/icon-insta.svg" alt="Инстаграм"></a></li>
       </ul>
       <b>Обратная связь:</b>
       <a class="button" href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
