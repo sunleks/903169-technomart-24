@@ -1,0 +1,316 @@
+body {
+ margin: 0;
+
+ font-family: "PT Sans", "Cuprum", Arial, sans-serif;
+ font-size: 14px;
+ line-height: 24px;
+ font-weight: 700;
+ color: #ffffff;
+ text-transform: uppercase;
+
+ background-color: #ffffff;
+}
+
+a {
+ text-decoration: none;
+}
+
+.main-header {
+ font-family: "Cuprum";
+ background-color: #f3f7f9;
+}
+
+.top-header {
+ font-size: 17px;
+ line-height: 18px;
+ color: #ffffff;
+ background-color: #293449;
+}
+
+.market-purchase,
+.account,
+.site-navigation {
+ list-style: none;
+}
+
+.market-purchase {
+ text-transform: none;
+}
+
+.market-purchase a,
+.account a,
+.site-navigation a {
+ color: #ffffff;
+}
+
+.market-name {
+ font-size: 16px;
+ line-height: 23px;
+ font-style: italic;
+ text-transform: none;
+ color: #ee3643;	
+}
+
+.phone-number {
+ font-size: 21px;
+ line-height: 21px;
+ color: #ee3643;
+
+ border: 1px solid #ffffff;
+}
+
+.addres-top {
+ text-transform: none;
+ color: #32425c;
+}
+
+.account a {
+ font-size: 21px;
+ line-height: 21px;
+ color: #000000;
+ text-transform: none;
+ background-color: #ffffff;	
+}
+
+.account a:hover {
+ color: #ee3643;	
+}
+
+.account a:active {
+ color: #c5c5c5;	
+}
+
+.main-navigation {
+ background-color: #32425c;	
+}
+.main-navigation li {
+ font-size: 17px;
+ line-height: 17px;
+ text-transform: none;
+}
+
+.market-purchase li:hover {
+ background-color: #212a3a;
+}
+
+.market-purchase li:active {
+ background-color: #161d29;
+}
+
+#search:hover {
+ background-color: #ffffff;
+}
+
+.site-navigation li:hover {
+ background-color: #293449;
+}
+
+.site-navigation li:active {
+ background-color: #1d2739; 	
+}
+
+.about-company {
+ font-family: "Cuprum";
+ font-size: 13px;
+ color: #000000;
+ text-transform: none;	
+}
+
+.name-company {
+ text-transform: uppercase;	
+}
+
+.info {
+ font-family: "PT sans";
+ font-weight: 400;	
+}
+
+.work-with-another-company li {
+ list-style: none;
+}
+
+.about-the-company {
+ background-color: #ee3643;
+ line-height: 18px;
+ color: #ffffff;
+ padding-top: 14px;
+ padding-bottom: 12px;
+ padding-left: 40px;
+ padding-right: 40px;
+}
+
+.contacts {
+ font-family: "Cuprum";
+ color: #000000;
+ font-size: 30px;
+ line-height: 30px;
+}
+
+.contacts .info-contacts {
+ font-family: "PT Sans";
+ font-size: 13px;
+ line-height: 24px;
+ font-weight: 400;
+ text-transform: none;
+}
+
+.contacts .help {
+ background-color: #ee3643;
+ font-size: 14px;
+ line-height: 18px;
+ color: #ffffff;
+ padding-top: 14px;
+ padding-bottom: 12px;
+ padding-left: 64px;
+ padding-right: 60px;
+}
+
+.main-footer {
+ font-family: "Cuprum";
+ font-size: 18px;
+ font-weight: 400;
+ line-height: 24px;
+ text-transform: none;
+ color: #ffffff;
+ background-color: #32425c;
+}
+
+.main-footer ul{
+ list-style: none;	
+}
+
+.main-footer a{
+ color: #ffffff;	
+}
+.third-navigation a{
+ color: #ffda96;
+}
+
+.bottom-footer {
+ background-color: #293449;	
+}
+
+.bottom-footer ul{
+ text-align: center;	
+}
+
+.bottom-footer .mail-addres,
+.bottom-footer .site-addres {
+ color: #ffda96;		
+}
+
+.second-navigation li:hover,
+.third-navigation li:hover {
+ text-decoration: underline;	
+}
+
+.second-navigation li:active,
+.third-navigation li:active {
+ text-decoration: none;
+ opacity: 0.5;
+}
+
+.mail-addres:hover,
+.site-addres:hover {
+text-decoration: underline;
+}
+
+.mail-addres:active,
+.site-addres:active {
+ text-decoration: none;
+ color: #ee3643;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+
+
+
+.personal-account a {
+ color: #000000;
+ text-transform: uppercase;
+}
+
+.personal-account a:hover {
+ color: #ee3643;
+ text-decoration: underline;
+}
+
+.personal-account a:active {
+ color: #000000;
+ opacity: 0.3;
+ text-decoration: underline;
+}
+
+.container {
+ color: #000000;	
+}
+
+.breadcrumbs li{
+ font-family: "Pt sans";
+ font-size: 13px;
+ line-height: 18px;
+ color: #000000;
+ list-style: none;
+}
+
+.breadcrumbs a {
+ color: #000000;
+}
+
+.tooling {
+ background-color: #f2f6f8;
+ color: #000000;
+ font-size: 30px;
+ line-height: 30px;
+}
+
+.filter {
+ color: #000000;
+}
+
+.filter li {
+ font-family: "PT sans";
+ list-style: none;
+ font-weight: 400;
+}
+
+.button {
+ background-color: #ffffff;
+ border: 1px solid #e5e5e5;
+ color: #000000;
+ text-transform: uppercase;
+ padding-left: 40px;
+ padding-right: 40px;
+ padding-top: 14px;
+ padding-bottom: 14px;
+}
+
+.items li {
+list-style: none;
+}
+
+.items a {
+ color: #000000;
+ font-weight: 700;
+}
+
+.items b {
+ font-weight: 700;
+ color: #999999;
+}
