@@ -1,10 +1,10 @@
 body {
  margin: 0;
 
- font-family: "PT Sans", "Cuprum", Arial, sans-serif;
+ font-family: "PT Sans", Arial, sans-serif;
  font-size: 14px;
  line-height: 24px;
- font-weight: 700;
+ font-weight: 500;
  color: #ffffff;
  text-transform: uppercase;
 
@@ -16,7 +16,7 @@ a {
 }
 
 .main-header {
- font-family: "Cuprum";
+ font-family: "Cuprum", Arial, sans-serif;
  background-color: #f3f7f9;
 }
 
@@ -97,7 +97,7 @@ a {
  background-color: #161d29;
 }
 
-#search:hover {
+input[placeholder="Поиск"]:hover {
  background-color: #ffffff;
 }
 
@@ -110,28 +110,35 @@ a {
 }
 
 .about-company {
- font-family: "Cuprum";
+ font-family: "Cuprum", Arial, sans-serif;
  font-size: 13px;
  color: #000000;
  text-transform: none;	
 }
 
 .name-company {
+ font-size: 30px;
+ line-height: 30px;
  text-transform: uppercase;	
 }
 
 .info {
- font-family: "PT sans";
- font-weight: 400;	
+ font-family: "PT sans", Arial, sans-serif;
+ font-size: 13px;
+ line-height: 24px;	
 }
 
 .work-with-another-company li {
+ font-size: 18px;
+ line-height: 20px;
  list-style: none;
 }
 
 .about-the-company {
  background-color: #ee3643;
+ font-size: 14px;
  line-height: 18px;
+ text-transform: uppercase;
  color: #ffffff;
  padding-top: 14px;
  padding-bottom: 12px;
@@ -140,17 +147,15 @@ a {
 }
 
 .contacts {
- font-family: "Cuprum";
  color: #000000;
  font-size: 30px;
  line-height: 30px;
 }
 
 .contacts .info-contacts {
- font-family: "PT Sans";
+ font-family: "PT sans", Arial, sans-serif;
  font-size: 13px;
  line-height: 24px;
- font-weight: 400;
  text-transform: none;
 }
 
@@ -166,31 +171,32 @@ a {
 }
 
 .main-footer {
- font-family: "Cuprum";
+ font-family: "Cuprum", Arial, sans-serif;
  font-size: 18px;
- font-weight: 400;
  line-height: 24px;
  text-transform: none;
  color: #ffffff;
  background-color: #32425c;
 }
 
-.main-footer ul{
+.main-footer ul {
  list-style: none;	
 }
 
-.main-footer a{
+.main-footer a {
  color: #ffffff;	
 }
-.third-navigation a{
+.third-navigation a {
  color: #ffda96;
 }
 
 .bottom-footer {
+ font-size: 16px;
+ line-height: 18px;
  background-color: #293449;	
 }
 
-.bottom-footer ul{
+.bottom-footer ul {
  text-align: center;	
 }
 
@@ -239,30 +245,57 @@ text-decoration: underline;
 
 
 
-
+/*.personal-account li:not(:first-child) {
+ text-decoration: underline;
+}*/
 
 .personal-account a {
+ font-size: 21px;
+ line-height: 21px;
  color: #000000;
- text-transform: uppercase;
+ text-transform: none;
+ background-color: #ffffff; 
+}
+
+.personal-account a {
+ text-decoration: underline;
 }
 
 .personal-account a:hover {
  color: #ee3643;
- text-decoration: underline;
 }
 
 .personal-account a:active {
  color: #000000;
  opacity: 0.3;
- text-decoration: underline;
+}
+.user-name a {
+  text-decoration: none;
 }
 
+.user-name a:hover {
+  color: #000000;
+}
+
+.user-name a:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+/*.personal-account li:not(:first-child) a:hover {
+ color: #ee3643;	
+}
+
+.personal-account li:nth-child(n) a:active {
+ color: #000000;
+ opacity: 0.3;	
+}
+*/
 .container {
  color: #000000;	
 }
 
-.breadcrumbs li{
- font-family: "Pt sans";
+.breadcrumbs li {
  font-size: 13px;
  line-height: 18px;
  color: #000000;
@@ -285,9 +318,7 @@ text-decoration: underline;
 }
 
 .filter li {
- font-family: "PT sans";
  list-style: none;
- font-weight: 400;
 }
 
 .button {
@@ -306,11 +337,25 @@ list-style: none;
 }
 
 .items a {
+ font-size: 18px;
+ line-height: 20px;
  color: #000000;
  font-weight: 700;
+ text-transform: none;
 }
 
 .items b {
+ font-size: 17px;
+ line-height: 18px
  font-weight: 700;
  color: #999999;
+}
+
+.items .red-label {
+ background: #ee3643;
+ color: #ffffff;
+ padding-top: 12px;
+ padding-bottom: 12px;
+ padding-left: 35px;
+ padding-right: 39px;
 }
