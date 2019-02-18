@@ -21,10 +21,13 @@ a {
 }
 
 .top-header {
+ /* display: flex; 
+ justify-content: space-between; */
  font-size: 17px;
  line-height: 18px;
  color: #ffffff;
  background-color: #293449;
+ min-height: 42px; 
 }
 
 .market-purchase,
@@ -33,9 +36,20 @@ a {
  list-style: none;
 }
 
+ul .market-purchase {
+/* margin: 0 auto;*/
+}
+
 .market-purchase {
+/*   display: flex;
+justify-content: space-between; */
  text-transform: none;
 }
+
+/* .market-purchase a {
+ display: block; 
+ padding: 22px;	
+} */
 
 .market-purchase a,
 .account a,
@@ -97,6 +111,10 @@ a {
  background-color: #161d29;
 }
 
+input[placeholder="Поиск"] {
+width: 270px;
+}
+
 input[placeholder="Поиск"]:hover {
  background-color: #ffffff;
 }
@@ -144,7 +162,9 @@ input[placeholder="Поиск"]:hover {
  padding-bottom: 12px;
  padding-left: 40px;
  padding-right: 40px;
+ border-radius: 1%;
 }
+
 
 .contacts {
  color: #000000;
@@ -243,21 +263,12 @@ text-decoration: underline;
   overflow: hidden;
 }
 
-
-
-/*.personal-account li:not(:first-child) {
- text-decoration: underline;
-}*/
-
 .personal-account a {
  font-size: 21px;
  line-height: 21px;
- color: #000000;
+ color: #32425c;
  text-transform: none;
  background-color: #ffffff; 
-}
-
-.personal-account a {
  text-decoration: underline;
 }
 
@@ -266,31 +277,23 @@ text-decoration: underline;
 }
 
 .personal-account a:active {
- color: #000000;
+ color: #32425c;
  opacity: 0.3;
 }
 .user-name a {
-  text-decoration: none;
+ color: #000000;
+ text-decoration: none;
 }
 
 .user-name a:hover {
-  color: #000000;
+ color: #000000;
 }
 
 .user-name a:active {
-  color: #000000;
-  opacity: 0.3;
-}
-
-/*.personal-account li:not(:first-child) a:hover {
- color: #ee3643;	
-}
-
-.personal-account li:nth-child(n) a:active {
  color: #000000;
- opacity: 0.3;	
+ opacity: 0.3;
 }
-*/
+
 .container {
  color: #000000;	
 }
@@ -359,3 +362,18 @@ list-style: none;
  padding-left: 35px;
  padding-right: 39px;
 }
+
+
+/* Стиль логотипа сайта. Начало */
+
+/* .logo-img {
+ display: block;
+ width: 220px;	
+ text-align: center;
+ background-color: #ee3643;
+ color: #ffffff;
+ 
+}
+ */
+/* Конец */
+
