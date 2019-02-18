@@ -136,6 +136,7 @@ input[placeholder="Поиск"]:hover {
 
 .name-company {
  font-size: 30px;
+ font-weight: 500;
  line-height: 30px;
  text-transform: uppercase;	
 }
@@ -165,9 +166,18 @@ input[placeholder="Поиск"]:hover {
  border-radius: 1%;
 }
 
+.about-the-company:hover {
+ background-color: #ca2c37; 
+}
+
+.about-the-company:active {
+ background-color: #ba2732; 
+}
 
 .contacts {
+ font-family: "Cuprum", Arial, sans-serif;
  color: #000000;
+ font-weight: 500;
  font-size: 30px;
  line-height: 30px;
 }
@@ -181,6 +191,7 @@ input[placeholder="Поиск"]:hover {
 
 .contacts .help {
  background-color: #ee3643;
+ font-family: "Cuprum", Arial, sans-serif;
  font-size: 14px;
  line-height: 18px;
  color: #ffffff;
@@ -188,6 +199,14 @@ input[placeholder="Поиск"]:hover {
  padding-bottom: 12px;
  padding-left: 64px;
  padding-right: 60px;
+}
+
+.contacts .help:hover {
+ background-color: #ca2c37; 
+}
+
+.contacts .help:active {
+ background-color: #ba2732; 
 }
 
 .main-footer {
@@ -264,11 +283,10 @@ text-decoration: underline;
 }
 
 .personal-account a {
- font-size: 21px;
- line-height: 21px;
+ font-size: 16px;
+ line-height: 18px;
  color: #32425c;
  text-transform: none;
- background-color: #ffffff; 
  text-decoration: underline;
 }
 
@@ -281,8 +299,11 @@ text-decoration: underline;
  opacity: 0.3;
 }
 .user-name a {
+ font-size: 21px;  
+ line-height: 21px;
  color: #000000;
  text-decoration: none;
+ background-color: #ffffff; 
 }
 
 .user-name a:hover {
@@ -290,8 +311,9 @@ text-decoration: underline;
 }
 
 .user-name a:active {
- color: #000000;
- opacity: 0.3;
+ color: rgba(0, 0, 0, 0.3);
+ opacity: 1;
+ background-color: #ffffff;
 }
 
 .container {
@@ -310,9 +332,11 @@ text-decoration: underline;
 }
 
 .tooling {
+ font-family: "PT sans", Arial, sans-serif;
  background-color: #f2f6f8;
- color: #000000;
+ color: #32425c;
  font-size: 30px;
+ font-weight: 500;
  line-height: 30px;
 }
 
