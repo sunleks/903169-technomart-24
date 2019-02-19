@@ -79,6 +79,7 @@ a {
  display: flex;
  flex-direction: column;	
 }
+
 .phone-number {
  font-size: 21px;
  line-height: 21px;
@@ -413,7 +414,13 @@ text-decoration: underline;
 
 .personal-account {
  display: flex;
- flex-direction: column;
+ flex-wrap: wrap;
+}
+.personal-account li {
+ list-style: none;	
+}
+.user-name {
+ width: 100%;
 }
 
 .personal-account a {
@@ -422,6 +429,7 @@ text-decoration: underline;
  color: #32425c;
  text-transform: none;
  text-decoration: underline;
+ margin-left: 20px;
 }
 
 .personal-account a:hover {
