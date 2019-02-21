@@ -20,18 +20,22 @@ a {
 .main-header {
  font-family: "Cuprum", Arial, sans-serif;
  background-color: #f3f7f9;
- padding: 0;
- margin: 0;
+}
+
+.header-wrapper-top {
+ display: flex;
+ justify-content: space-between;
+ width: 940px;	
+ margin: 0 auto;
+ box-sizing: border-box;
 }
 
 .top-header {
- display: flex;
- justify-content: space-between; 
  font-size: 17px;
  line-height: 18px;
  color: #ffffff;
  background-color: #293449;
- min-height: 42px; 
+ height: 42px; 
 }
 
 .market-purchase,
@@ -45,12 +49,13 @@ a {
  justify-content: space-between;
  margin: 0;
  padding: 0;
- min-width: 450px;
+ box-sizing: border-box;
 }
+
 .market-purchase a {
  display: block;
- padding: 14px 50px;
- text-transform: none;	
+ padding: 12px 0 12px 45px;
+ text-transform: none;
 }
 
 .market-purchase a,
@@ -59,6 +64,10 @@ a {
  color: #ffffff;
 }
 
+.header-wrapper-middle-bottom {
+ width: 940px;
+ margin: 0 auto;	
+}
 .middle-header {
  display: flex;
  justify-content: space-between;
@@ -125,8 +134,7 @@ a {
 }
 
 .main-navigation {
- padding: 0;
- margin: 0;
+ margin-top: 42px;
  background-color: #32425c;
  
 }
@@ -161,7 +169,7 @@ input[placeholder="Поиск"] {
  margin: 0;
  padding: 0;
  width: 270px;
- height: 47px;
+ height: 42px;
  background-color: #293449;
  border: none;
 }
@@ -178,6 +186,17 @@ input[placeholder="Поиск"]:hover {
  background-color: #1d2739; 	
 }
 
+.main-wrapper {
+ display: flex;
+ justify-content: space-between;
+ width: 940px;
+ margin: 0 auto;
+}
+.main-wrapper-catalog {
+ width: 940px;
+ margin: 0 auto;
+}
+
 .about-company {
  font-family: "Cuprum", Arial, sans-serif;
  font-size: 13px;
@@ -186,8 +205,6 @@ input[placeholder="Поиск"]:hover {
 }
 
 .main-content {
- display: flex;
- justify-content: space-between;
  margin-bottom: 86px;	
 }
 
@@ -297,6 +314,11 @@ input[placeholder="Поиск"]:hover {
  color: #ffffff;	
 }
 
+.footer-wrapper-top-middle {
+ width: 940px;
+ margin: 0 auto;
+}
+
 .top-footer {
  display: flex;
  justify-content: space-between;
@@ -334,13 +356,18 @@ input[placeholder="Поиск"]:hover {
 }
 
 .bottom-footer {
- display: flex;
- justify-content: space-between;
  font-size: 16px;
  line-height: 18px;
  background-color: #293449;	
  padding-top: 33px;
  padding-bottom: 30px; 
+}
+
+.footer-wrapper-bottom {
+ display: flex;
+ justify-content: space-between;
+ width: 940px;
+ margin: 0 auto;
 }
 
 .footer-copyright {
@@ -414,13 +441,16 @@ text-decoration: underline;
 
 .personal-account {
  display: flex;
- flex-wrap: wrap;
+ flex-direction: column;
+ margin: 0;
+ padding: 0;
 }
 .personal-account li {
  list-style: none;	
 }
-.user-name {
- width: 100%;
+
+.user-name a {
+ padding: 5px 70px 5px 50px;	
 }
 
 .personal-account a {
@@ -488,6 +518,7 @@ text-decoration: underline;
  font-size: 30px;
  font-weight: 500;
  line-height: 30px;
+ padding: 35px 740px 30px 35px;
 }
 
 .wrapper-items {
@@ -559,8 +590,7 @@ margin: auto;
  display: block;
  padding-left: 55px;
  padding-right: 55px;
- padding-top: 13px;	
- padding-bottom: 11px;
+ padding-top: 11px;	
  background-color: #ee3643;
  box-shadow: 0 5px 0 0 #b52933;
 }
