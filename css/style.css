@@ -24,10 +24,8 @@ a {
 
 .header-wrapper-top {
  display: flex;
- justify-content: space-between;
  width: 940px;	
  margin: 0 auto;
- box-sizing: border-box;
 }
 
 .top-header {
@@ -36,6 +34,19 @@ a {
  color: #ffffff;
  background-color: #293449;
  height: 42px; 
+}
+
+.ready-order {
+ background-color: #63a63e; 
+}
+
+.ready-order:hover {
+ background-color: #5fbb2d; 
+}
+
+.ready-order:active {
+ background-color: #5fbb2d;
+ opacity: 0.5; 
 }
 
 .market-purchase,
@@ -49,13 +60,13 @@ a {
  justify-content: space-between;
  margin: 0;
  padding: 0;
- box-sizing: border-box;
 }
 
 .market-purchase a {
  display: block;
- padding: 12px 0 12px 45px;
+ padding: 13px 37px 12px 37px;
  text-transform: none;
+ box-sizing: content-box;
 }
 
 .market-purchase a,
@@ -81,7 +92,8 @@ a {
  line-height: 23px;
  font-style: italic;
  text-transform: none;
- color: #ee3643;	
+ color: #ee3643;
+ margin-left: 50px;	
 }
 
 .phone-addres {
@@ -93,11 +105,11 @@ a {
  font-size: 21px;
  line-height: 21px;
  color: #ee3643;
- padding-left: 74px;
- padding-right: 50px;
+ padding-left: 72px;
+ padding-right: 47px;
  padding-top: 12px;
  padding-bottom: 12px;
- margin-bottom: 15px;
+ margin-bottom: 10px;
 
  border: 4px solid #ffffff;
 }
@@ -172,6 +184,7 @@ input[placeholder="Поиск"] {
  height: 42px;
  background-color: #293449;
  border: none;
+ padding-left: 46px;
 }
 
 input[placeholder="Поиск"]:hover {
@@ -441,16 +454,28 @@ text-decoration: underline;
 
 .personal-account {
  display: flex;
- flex-direction: column;
- margin: 0;
+ flex-wrap: wrap;
  padding: 0;
+ width: 310px;
 }
 .personal-account li {
  list-style: none;	
 }
 
+.personal-account li:not(:first-child) {
+ margin-left: 30px;
+ margin-top: 20px;
+}
+
 .user-name a {
- padding: 5px 70px 5px 50px;	
+ padding-left: 58px;
+ padding-right: 66px;
+ padding-top: 10px;
+ padding-bottom: 10px;	
+}
+
+.user-name {
+ width: 100%;	
 }
 
 .personal-account a {
@@ -459,7 +484,6 @@ text-decoration: underline;
  color: #32425c;
  text-transform: none;
  text-decoration: underline;
- margin-left: 20px;
 }
 
 .personal-account a:hover {
@@ -523,7 +547,7 @@ text-decoration: underline;
 
 .wrapper-items {
  display: flex;
- justify-content: flex-start;	
+ justify-content: space-between;	
 }
 
 .filter {
@@ -550,13 +574,20 @@ text-decoration: underline;
  justify-content: space-between;
  flex-wrap: wrap;
  width: 700px;
+ margin: 0;
+ padding: 0;
 }
 
 .items li {
-list-style: none;
-width: 220px;
-height: 320px;
-margin: auto;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ list-style: none;
+ width: 220px;
+ height: 320px;
+ padding: 20px;
+ margin-right:-20px;
+ margin-left: -20px;
 }
 
 .items a {
@@ -569,9 +600,10 @@ margin: auto;
 
 .items b {
  font-size: 17px;
- line-height: 18px
+ line-height: 18px;
  font-weight: 700;
  color: #999999;
+ display: block;
 }
 
 .items .red-label {
@@ -588,7 +620,7 @@ margin: auto;
 
 .logo-img {
  display: block;
- padding-left: 55px;
+ padding-left: 54px;
  padding-right: 55px;
  padding-top: 11px;	
  background-color: #ee3643;
@@ -607,3 +639,6 @@ margin: auto;
 
 /* Конец */
 
+.close-all {
+ display: none;	
+}
