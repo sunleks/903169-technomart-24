@@ -1332,6 +1332,12 @@ _:-ms-fullscreen,
     padding: 65px 124px 68px 179px;
 }
 
+@supports (-ms-ime-align:auto) { 
+    .modal-access p { 
+        padding: 65px 124px 68px 179px;
+    } 
+}
+
 .modal-access p::before {
     position: absolute;
     content: "";
@@ -1651,6 +1657,12 @@ _:-ms-fullscreen,
     padding: 10px 43px 10px 47px;
 }
 
+@supports (-ms-ime-align:auto) { 
+    .open-catalog { 
+        padding: 10px 45px 10px 48px; 
+    } 
+}
+
 .open-catalog:hover {
     background-color: #ca2c37;
 }
@@ -1684,6 +1696,10 @@ _:-ms-fullscreen,
     height: 10px;
     background: #ffffff;
     border-radius: 50%;
+}
+
+.slaid-active {
+    display: block;
 }
 
 .btn-control .slaid-active::before {
@@ -1723,10 +1739,6 @@ _:-ms-fullscreen,
     background-position: 0 0;
     top: 115px;
     left: 25px;
-}
-
-.slaid-active {
-    display: block;
 }
 
 .machine-item {
@@ -1965,6 +1977,12 @@ _:-ms-fullscreen,
 _:-ms-fullscreen,
 :root .all-items-manufacturers {
     width: 116px;
+}
+
+@supports (-ms-ime-align:auto) { 
+    .all-items-manufacturers { 
+        width: 116px; 
+    } 
 }
 
 .all-items-manufacturers:hover {
